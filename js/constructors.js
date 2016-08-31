@@ -140,6 +140,35 @@ var look = function(userEntryArray, arrayLength, room) {
   }
 };
 
+var open = function(userEntryArray, arrayLength, rooms) {
+  if(arrayLength === 1){
+    $("#story").append("<li>To OPEN a DOOR, type, all on one line, 'OPEN', then 'NORTH', 'EAST', 'SOUTH', or 'WEST', then the word 'DOOR'.</li>");
+  }
+  //If it is OPEN with more words
+  else if(arrayLength > 1){
+    for(var r=0;r<rooms.length;r++){
+      if (rooms[r].active = true) {
+        for(var word=1; word < arrayLength; word++){
+          for(var d=0;d<rooms[r].doors.length;d++){
+            if(userEntryArray[word].includes(rooms[r].exits)){
+              $("#story").append("<li>You OPEN the " + rooms[r].exits+ " DOOR and enter the next room.</li>");
+              console.log(rooms[r].doors[d])
+              rooms[r].doors[d].destination.active = true;
+              rooms[r].active = false;
+              $("#story").append("<li>" + rooms[r].doors[d].destination.info[0] + "</li>")
+              console.log("in room 2? " + room2.active)
+              console.log("in room 1? " + room1.active)
+            }
+            // else if (!userEntryArray[door].includes(rooms[r].exits)) {
+            //   $("#story").append("<li>To OPEN a DOOR, type, all on one line, 'OPEN', then 'NORTH', 'EAST', 'SOUTH', or 'WEST', then the word 'DOOR'.</li>");
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+
 // var get = function(userEntryArray, arrayLength, rooms, player) {
 //   for(var r=0;r<rooms.length;r++){
 //     if(arrayLength === 1){

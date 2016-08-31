@@ -1,4 +1,3 @@
-var rooms = []
 var template = new Room(
   //active
   false,
@@ -25,7 +24,7 @@ var template = new Room(
   []
 );
 
-var room1 = new Room(
+room1 = new Room(
   //active
   true,
   //info
@@ -46,19 +45,23 @@ var room1 = new Room(
   //characters
   [Fred],
   //doors
-  [],
+  [northDoor1],
   //usables
-  [door1]
+  [],
+  // exits
+  'NORTH'
 );
-rooms.push(room1)
+rooms.push(room1);
+southDoor2.destination = room1;
 
-var room2 = new Room(
+
+room2 = new Room(
   //active
   false,
   //info
   [
     //Main description
-    "It's a room. There is a GATE leading NORTH and a DOOR leading SOUTH.",
+    "You're in ROOM 2 now. There is a door to the SOUTH.",
     //North description
     "North of room",
     //East description
@@ -69,12 +72,15 @@ var room2 = new Room(
     "West of Room"
   ],
   //loot
-  [],
+  [drugs],
   //characters
   [],
   //doors
-  [],
+  [southDoor2],
   //usables
-  [door1]
+  [],
+  // exits
+  'SOUTH'
 );
 rooms.push(room2)
+northDoor1.destination = room2
