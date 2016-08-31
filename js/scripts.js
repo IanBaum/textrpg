@@ -96,6 +96,9 @@ $(document).ready(function(){
           else if (userEntryArray.length > 1) {
             fredDialogue();
           }
+          else if (userEntryArray[0] === 'OPEN') {
+            open(userEntryArray, numberOfWords, rooms);
+          }
         }
       }
     }
@@ -103,6 +106,7 @@ $(document).ready(function(){
       $("#story").append("<li>You can't '" + userEntry + "'.</li>");
     }
     $("#playerHealth").text(player.currentHealth + "/" + player.maxHealth)
+    $("#userInput").val("");
   });
 
   $("#restart").click(function() {
