@@ -1,3 +1,5 @@
+var rooms = [];
+
 var template = new Room(
   //active
   false,

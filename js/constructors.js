@@ -57,6 +57,14 @@ var Usable = function(name,door,info){
   this.info = info;
 }
 
+var Door = function(door, direction, info, destination, locked){
+  this.door = door;
+  this.direction = direction
+  this.info = info;
+  this.destination = destination;
+  this.locked = locked
+}
+
 Room.prototype.look = function() {
   if (this.active) {
     $("#story").append("<li>" + this.info[0] + "</li>");

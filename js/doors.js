@@ -11,7 +11,6 @@ northDoor1 = new Door(
   // locked
   false
 );
-doors.push(northDoor1)
 
 southDoor2 = new Door(
   // door
@@ -25,4 +24,3 @@ southDoor2 = new Door(
   // locked
   false
 );
-doors.push(southDoor2)
