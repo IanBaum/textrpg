@@ -36,3 +36,16 @@ var spider = new NPC(
   //dropped items
   potion
 );
+
+var Marcel = new NPC(
+  //name
+  "Marcel",
+  //info
+  "It's Marcel the merchant! He is sitting in the corner looking around nervously.",
+  //max health
+  10,
+  //damage
+  1,
+  //dropped items
+  potion
+);

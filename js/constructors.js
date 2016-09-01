@@ -43,11 +43,13 @@ var NPC = function(name,info,maxHealth,damage, droppedItems){
   this.currentHealth = this.maxHealth;
   this.damage = damage;
   this.isAlive = true;
-  this.droppedItems = droppedItems
+  this.droppedItems = droppedItems;
+  this.dialogue = dialogue;
 }
 
-var Dialogue = function(){
-  this.response = response;
+var Dialogue = function(greeting,npcResponse,playerResponse){
+  this.greeting = greeting;
+  this.npcResponse = npcResponse;
   this.playerResponse = playerResponse;
 }
 
@@ -83,14 +85,6 @@ Room.prototype.look = function() {
     }
   }
 };
-
-Room.prototype.contentsDescription = function() {
-  for (var){
-    if (this.active) {
-    $("#story").append()
-    }
-  }
-}
 
 Player.prototype.printInventory = function() {
   $("#player-inventory").empty();
@@ -311,4 +305,16 @@ Player.prototype.usePotion = function(potion) {
     }
   }
   this.printInventory();
+}
+
+NPC.prototype.talk = function() {
+  if(userEntryArray.length === 1){
+    $("#story").append("<li>Please select someone to TALK to.</li>");
+  }
+  //If it is TALK with more words
+  else if(userEntryArray.length > 1){
+    for(var d=0;d>this.dialogue.length;d++){
+      if this.dialogue[d]
+    }
+  }
 }

@@ -55,14 +55,9 @@ $(document).ready(function(){
         else if (userEntry === 'USE POTION') {
           player.usePotion(potion);
         }
-        // if(userEntryArray[0] === commands[4]) {
-        //   if(userEntryArray.length === 1){
-        //     $("#story").append("<li>TALK to whom?</li>");
-        //   }
-        //   else if (userEntryArray.length > 1) {
-        //     fredDialogue();
-        //   }
-        // }
+        if(userEntryArray[0] === commands[4]) {
+          character.dialogue(greeting,npcReponse,playerResponse);
+        }
       }
     }
     if(!isValid){
