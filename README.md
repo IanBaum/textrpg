@@ -1,12 +1,12 @@
-# _{RPG}_
+# _RPG_
 
-#### _{This is a text based RPG style game.}, {August 29, 2016}_
+#### _This is a text based RPG style game., August 29, 2016_
 
-#### By _**{Rebecca Allen, Ian Baum, Zachary Baum and Andres Garcia}**_
+#### By _**Rebecca Allen, Ian Baum, Zachary Baum and Andres Garcia**_
 
 ## Description
 
-_{This is a text based RPG style game.}_
+_This is a text based RPG style game._
 
 ## Setup/Installation Requirements
 
@@ -61,18 +61,18 @@ _{This is a text based RPG style game.}_
 
 ## Known Bugs
 
-_{There are no known bugs at the time of release.}_
+_There are no known bugs at the time of release._
 
 ## Support and contact details
 
-_{For questions and assistance please contact any of the game creators: Rebecca Allen at rebeccazarsky@gmail.com, Ian Baum at Ian@IanBaum.com, Zachary Baum at zacharybaum42@gmail.com or Andres Garcia at andresgarcia96@gmail.com.}_
+_For questions and assistance please contact any of the game creators: Rebecca Allen at rebeccazarsky@gmail.com, Ian Baum at Ian@IanBaum.com, Zachary Baum at zacharybaum42@gmail.com or Andres Garcia at andresgarcia96@gmail.com._
 
 ## Technologies Used
 
-_{This program utilizes HTML, CSS, Javascript, Jquery and Bootstrap.}_
+_This program utilizes HTML, CSS, Javascript, Jquery and Bootstrap._
 
 ### License
 
-*{This program is licensed under the MIT license.}*
+*This program is licensed under the MIT license.*
 
-Copyright (c) 2016 **_{Rebecca Allen, Ian Baum, Zachary Baum, Andres Garcia}_**
+Copyright (c) 2016 **_Rebecca Allen, Ian Baum, Zachary Baum, Andres Garcia_**
